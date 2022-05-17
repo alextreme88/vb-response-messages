@@ -12,7 +12,7 @@ function parseForm(form) {
 
   console.log('parse form fired');
 
-  document.querySelector('label').textContent = values;
+  document.querySelector('label').textContent = url;
 }
 
 for (var i = 0; i < document.forms.length; i++) {
