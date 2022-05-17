@@ -2,6 +2,8 @@
 import './style.css';
 
 function parseForm(form) {
+  window.alert('asd');
+
   var values = '';
 
   for (var i = 0; i < form.elements.length; i++) {
@@ -11,10 +13,9 @@ function parseForm(form) {
   var url = form.action;
 
   console.log('parse form fired');
-
-  document.querySelector('label').textContent = url;
 }
 
 for (var i = 0; i < document.forms.length; i++) {
+  document.querySelector('label').textContent = '123';
   parseForm(document.forms[i]);
 }
